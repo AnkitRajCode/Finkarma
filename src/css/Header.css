@@ -1,0 +1,16 @@
+.headerCorner{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+.headerDot{
+    position:absolute;
+    top: 166px;
+    left: 0px;
+    z-index: -1;
+}
+.headerVector{
+    float: right;
+    height: 90vh;
+    
+}
