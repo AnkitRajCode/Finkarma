@@ -7,21 +7,15 @@ class Navbar extends Component {
       const navbar = document.getElementById("navbar-main");
       const menu = document.querySelector(".menu-list");
       const menuBtn = document.getElementById("burger-menu");
-   
       const logo= document.querySelector(".gfg-logo");
-      // var listItem=menu.querySelectorAll(".list-item");
       window.onscroll = ()=>{
-         if (window.scrollY > 20){
+         if (window.scrollY >= 20){
             navbar.classList.add("sticky");
             logo.classList.add("make-smaller");
-            // listItem.style.color="#fefefe";
          }
          else{
             navbar.classList.remove("sticky");
             logo.classList.remove("make-smaller");
-            // listItem.style.color="#343434";
-
-
          }
       }
 
@@ -54,31 +48,29 @@ class Navbar extends Component {
             body.classList.remove("disabledScroll");
             currentState="menu";
          }
-      
       });
-
    }
    render() {
       return (
-         <nav class="navbar" id="navbar-main">
-            <div class="content">
-                <div class="logo"><a href="/" className="gfg-logo">FinKa₹ma</a></div>
+         <nav className="bar" id="navbar-main">
+            <div className="content">
+                <div className="logo"><a href="/" className="gfg-logo">FinKa₹ma</a></div>
 
-                <ul class="menu-list">
-                  <li><a href="/" className = "nav_home list-item">Home</a></li>
-                  <li><a href="/Events" className = "nav_event list-item">Finkarma Daily </a></li>
-                  <li><a href="/Projects" className = "nav_projects list-item">Catagory </a></li>
-                  <li><a href="/Member" className= "nav_about list-item">Inforgraphics </a></li>
+                <ul className="menu-list">
+                  <li><a href="/" className="nav_home">Home</a></li>
+                  <li><a href="/finkarmaDaily" className="nav_event">Finkarma Daily </a></li>
+                  <li><a href="/Catagory" className="nav_projects">Catagory </a></li>
+                  <li><a href="/Inforgraphics" className="nav_about">Inforgraphics </a></li>
                 </ul>
 
-               <a class="subButton" href="#">Subscribe</a>
+               <a className="subButton" href="/subscribe">Subscribe</a>
 
-                <div class="burger-menu" id="burger-menu">
-                    <div class="line-1" id="line-1"></div>
-                    <div class="line-2-container" id="line-2-container">
-                        <div class="line-2" id="line-2"></div>
+                <div className="burger-menu" id="burger-menu">
+                    <div className="line-1" id="line-1"></div>
+                    <div className="line-2-container" id="line-2-container">
+                        <div className="line-2" id="line-2"></div>
                     </div>
-                    <div class="line-3" id="line-3"></div>
+                    <div className="line-3" id="line-3"></div>
                 </div>
             </div>
          </nav>

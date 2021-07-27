@@ -1,16 +1,135 @@
+.header{
+    height: 110vh;
+    width: 100vw;
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
 .headerCorner{
     position:absolute;
     top: 0px;
     left: 0px;
+    z-index: 0;
 }
 .headerDot{
     position:absolute;
     top: 166px;
     left: 0px;
-    z-index: -1;
+    z-index: 0;
 }
-.headerVector{
-    float: right;
-    height: 90vh;
+
+.subscriberDisplay{
+    position: relative;
+    font-size: 16px;
+    width: 25vw;
+    padding: 7px 10px;
+    box-shadow: 0px 7px 25px 0px rgb(22 53 76 / 5%);
+    text-align: center;
+    border-radius: 4em;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 110px;
+    margin-left: 20%;
+    z-index: 1;
+}
+.subscriberDisplayText{
+    font-weight: 500;
+    color: #0f2137;
+}
+.subscriberDisplayNumber{
+    font-weight: 700;
+    color: #eb4d4b;
+}
+
+.headerTagLine{
+    font-size: 50px;
+    line-height: 60px;
+    color: #0f2137;
+    font-weight: 700;
+    margin: 30px 20%;
+}
+.headerText{
+    width: 30vw;
+    font-size: 20px;
+    color: #343d48cc;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-left: 20%;
+}
+
+.headerInput{
+    width: 25vw;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #343d48;
+    padding: 3px 15px;
+    border-color: #dadada;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(233, 227, 254);
+    border-radius: 10px;
+    background-color: rgb(243, 242, 250);
+    height: 46px;
+    margin: 25px 20% ;
+}
+.headerButton{
+    width: 25vw;
+    padding: 10px 15px !important;
+    font-size: 15px;
+    margin: 0px 20% ;
+    border-color: #00d2ff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    display: block;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+}
+.headerButton:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+/* VECTOR SECTION */
+.VectorSection{
+    width: 100vw;
+    height: 100vh;
+}
+.headerCover{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.headerGraph{
+    position:absolute;
+    padding: 8px;
+    height: 50px;
+    top: 90px;
+    left: 30vw;
+    z-index: 2;
+    animation: animateUpDown 2.5s .3s infinite alternate-reverse both;
+}
+.headerChat{
+    position:absolute;
+    height: 70px;
+    top: 196px;
+    left: 13vw;
+    z-index: 2;
+    animation: animateUpDown 1.9s .3s infinite alternate-reverse both;
+}
+@keyframes animateUpDown {
+    0% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
     
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
