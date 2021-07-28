@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import Finkarmadaily from '../components/Finkarmadaily';
-import '../css/Finkarmadaily.css';
+import Header from './Header';
+import Finkarmadaily from './Finkarmadaily';
 
 
 class Landing extends Component {
