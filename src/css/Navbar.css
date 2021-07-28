@@ -195,9 +195,6 @@
     body.disabledScroll {
        overflow: hidden;
     }
-    .bar{
-      padding: 20px 0;
-    }
     .subButton {
         display: none;
     }
@@ -219,7 +216,7 @@
        display: block;
        padding: 40px 0;
        text-align: center;
-       clip-path: circle(25px at calc(100% - 60px) calc(0% + 62px));
+       clip-path: circle(25px at calc(100% - 60px) calc(0% + 42px));
        transition: all 0.3s ease;
        z-index: -1;
     }

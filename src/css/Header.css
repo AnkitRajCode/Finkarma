@@ -117,8 +117,8 @@
 .headerChat{
     position:absolute;
     height: 70px;
-    top: 196px;
-    left: 13vw;
+    top: 176px;
+    left: 9vw;
     z-index: 2;
     animation: animateUpDown 1.9s .3s infinite alternate-reverse both;
 }
@@ -131,5 +131,36 @@
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header{
+        height: 140vh;
+    }
+    .headerTagLine,
+    .subscriberDisplay,
+    .headerInput,
+    .headerButton,
+    .headerText{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .subscriberDisplay{
+        margin-top: 130px;
+    }
+    .headerCover{
+        width: 100vw;
+        margin: 0px;
+    }
+    .headerGraph{
+        height: 50px;
+        top: 40px;
+        left: 80vw;
+    }
+    .headerChat{
+        height: 70px;
+        top: 146px;
+        left: 9vw;
     }
 }

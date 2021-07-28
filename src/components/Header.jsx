@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/Header.css';
 import coner from '../images/coner.png';
 import dot from '../images/dot.png';
-import headerCover from '../images/headerCover5.png';
+import headerCover from '../images/cover.png';
 import headerGraph from '../images/graph.png';
 import headerChat from '../images/chat.png';
 
@@ -11,7 +11,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="row">
-                    <div className="col-md-6 ">
+                    <div className="col-md-6">
                         <img src={coner} alt="coner"className="headerCorner" />
                         <img src={dot} alt="dot" className="headerDot"/>
                         <div className="subscriberDisplay">

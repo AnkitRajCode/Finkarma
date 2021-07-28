@@ -9,7 +9,7 @@ class Navbar extends Component {
       const menuBtn = document.getElementById("burger-menu");
       const logo= document.querySelector(".gfg-logo");
       window.onscroll = ()=>{
-         if (window.scrollY >= 20){
+         if (window.scrollY > 20){
             navbar.classList.add("sticky");
             logo.classList.add("make-smaller");
          }
