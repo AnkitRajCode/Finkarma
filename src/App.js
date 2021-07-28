@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
+import landing from './pages/Landing';
 import './App.css';
 import {BrowserRouter, Route , Switch } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ class App extends React.Component {
          <Navbar></Navbar>
          <BrowserRouter>
             <Switch>
-              <Route path="/" exact component={Header} />
+              <Route path="/" exact component={landing} />
               <Route render={()=><div className="main_title_error">404 : Page Not Found</div>} />
             </Switch>
          </BrowserRouter>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../css/finkarmaDaily.css';
+import '../css/FinkarmaDaily.css';
 
-class finkarmaDaily extends Component {
+class FinkarmaDaily extends Component {
     render() {
         return (
             <div className="finkarmaDaily">
@@ -11,4 +11,4 @@ class finkarmaDaily extends Component {
     }
 }
 
-export default finkarmaDaily;
+export default FinkarmaDaily;
