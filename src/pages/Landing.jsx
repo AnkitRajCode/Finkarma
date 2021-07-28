@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import FinkarmaDaily from '../components/FinkarmaDaily';
+import FinkarmaDaily from '../components/FinkarmaDaily.jsx';
 
 class Landing extends Component {
     render() {
