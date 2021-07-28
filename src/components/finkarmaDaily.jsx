@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../css/FinkarmaDaily.css';
+import '../css/Finkarmadaily.css';
 import vector from '../images/headerCover.jpg'
 
-class FinkarmaDaily extends Component {
+class Finkarmadaily extends Component {
     render() {
         return (
             <div className="finkarmaDaily pt-5">
@@ -53,4 +53,4 @@ class FinkarmaDaily extends Component {
     }
 }
 
-export default FinkarmaDaily;
+export default Finkarmadaily;

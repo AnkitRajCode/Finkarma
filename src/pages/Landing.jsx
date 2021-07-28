@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import FinkarmaDaily from '../components/FinkarmaDaily.jsx';
+import Finkarmadaily from '../components/Finkarmadaily';
 
 class Landing extends Component {
     render() {
         return (
             <div>
                 <Header></Header>
-                <FinkarmaDaily></FinkarmaDaily>
+                <Finkarmadaily></Finkarmadaily>
             </div>
         )
     }
