@@ -1,0 +1,38 @@
+.catagory{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.catagoryTitle{
+    font-size: 42px;
+    white-space: pre-line;
+    font-weight: 600;
+    color: #051441;
+    margin-bottom: 30px;
+}
+.catagoryAbout{
+    font-size: 22px;
+    line-height: 1.6;
+    color: #051441;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.catagoryContent{
+    color: #545454;
+    line-height: 32px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.catagoryBox{
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
+    background-color: blue;
+}

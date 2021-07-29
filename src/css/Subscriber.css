@@ -1,0 +1,10 @@
+.Subscriber{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    background-image: url(../images/SubscriberBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
