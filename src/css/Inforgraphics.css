@@ -1,0 +1,7 @@
+.inforgraphics{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.inforgraphics .card{
+    cursor: pointer;
+}

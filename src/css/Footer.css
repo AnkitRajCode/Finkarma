@@ -1,0 +1,62 @@
+.footer{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px ;
+}
+.SocialMediaLogo{
+    width: 30px;
+    height: 30px;
+}
+.footerBrand{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.footerAddress{
+    font-size: 15px;
+    font-weight: 400;
+}
+.footerSlogan{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.playStore{
+    width: 190px;
+    height: 80px;
+}
+.ContactUs,
+.ourInfo{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.gmail{
+    text-decoration: none!important;
+    color: #051441;
+    font-size: 13px;
+    font-weight: 400;
+}
+.tos, 
+.policy{
+    color: #051441;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.gmail:hover{
+    color: black;
+}
+.SignOffLines{
+    margin-top: 10px;
+}
+.copyright{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}

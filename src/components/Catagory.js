@@ -4,7 +4,7 @@ import '../css/Catagory.css';
 class Catagory extends Component {
     render() {
         return (
-            <div className="catagory py-5">
+            <div className="catagory pt-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">

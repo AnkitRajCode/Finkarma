@@ -1,10 +1,70 @@
 .Subscriber{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-color: aliceblue;
     background-image: url(../images/SubscriberBackground.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+}
+.subscribeInput{
+    width: 50vw;
+    margin: 50px 25vw 15px 25vw;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #343d48;
+    padding: 3px 15px;
+    border-color: #dadada;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(233, 227, 254);
+    border-radius: 10px;
+    background-color: rgb(243, 242, 250);
+    height: 46px;
+}
+.subscribeButton{
+    width: 50vw;
+    margin: 20px 25vw;
+    padding: 10px 15px !important;
+    font-size: 15px;
+    border-color: #00d2ff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    display: block;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+}
+.joinedSubscriber{
+    font-size: 36px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+.tagLineSubscriber{
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    color: #525f7f;
+    margin-top: 30px;
+}
+.signingOffLineSub{
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 400;
+    color: #525f7f;
+}
+.signingOffLineSub a{
+    text-decoration: none!important;
 }

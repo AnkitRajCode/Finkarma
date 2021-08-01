@@ -5,9 +5,13 @@ class Subscriber extends Component {
     render() {
         return (
             <div className="Subscriber">
-                <div className="container">
-
-                </div>
+                <div className="joinedSubscriber">Join 3,50,000+ subscribers</div>
+                <div className="tagLineSubscriber">We will never spam you. Pinky promise 🙌</div>
+                <form action="" method="">
+                    <input type="email" name="" placeholder="Enter Your Email" className="subscribeInput" />
+                    <input type="button" name="" value="Subscribe" className="subscribeButton" />
+                </form>
+                <div className="signingOffLineSub">Be a part of our ever growing community. <a href="https://twitter.com/finkarmaIN">Join us on Twitter.</a></div>
             </div>
         )
     }
