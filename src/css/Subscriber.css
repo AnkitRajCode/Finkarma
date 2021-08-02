@@ -43,6 +43,11 @@
     display: block;
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
 }
+.subscribeButton:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
 .joinedSubscriber{
     font-size: 36px;
     text-align: center;
@@ -67,4 +72,23 @@
 }
 .signingOffLineSub a{
     text-decoration: none!important;
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    .Subscriber{
+        height: 70vh;
+    }
+    .subscribeInput{
+        width: 90vw;
+        margin: 50px 5vw 15px 5vw;
+
+    }
+    .subscribeButton{
+        width: 90vw;
+        margin: 20px 5vw;
+    }
+    .signingOffLineSub a{
+        display: none;
+    }
 }

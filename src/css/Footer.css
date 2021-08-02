@@ -81,6 +81,7 @@
     .SignOffLines{
         margin-top: 10px;
         text-align: center;
+        width: 100vw;
     }
     .copyright{
         color: black;
@@ -89,5 +90,12 @@
         font-size: 15px;
         margin-top: 10px;
         text-align: center;
+    }
+    .footerDivSocial{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }

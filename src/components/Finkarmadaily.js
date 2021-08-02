@@ -7,7 +7,12 @@ class Finkarmadaily extends Component {
         return (
             <div className="finkarmaDaily pt-5">
                 <div className="container">
-                    <div className="row">
+                    <div className="row fdFlex">
+                        <div className="col-md-6">
+                            <div className="fdTitle">Finkarma Daily</div>
+                            <div className="fdAbout">Every great design begin with an even better story</div>
+                            <div className="fdContent">Since beginning my journey as a freelancer designer nearly 4 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use, I am quietly confident, naturally curious.</div>
+                        </div>
                         <div className="col-md-6">
                             <div className="card mb-3 shadow">
                                 <div className="row no-gutters">
@@ -42,11 +47,7 @@ class Finkarmadaily extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <div className="fdTitle">Finkarma Daily</div>
-                            <div className="fdAbout">Every great design begin with an even better story</div>
-                            <div className="fdContent">Since beginning my journey as a freelancer designer nearly 4 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use, I am quietly confident, naturally curious.</div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
