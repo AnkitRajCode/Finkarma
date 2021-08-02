@@ -60,3 +60,34 @@
     font-size: 15px;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 500px) {
+    .footer{
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .playStore{
+        width: 160px;
+        height: 72px;
+    }
+    .footerDiv{
+        margin-top: 25px;
+    }
+    .footerSlogan{
+        margin-top: 10px;
+    }
+    .SignOffLines{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .copyright{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

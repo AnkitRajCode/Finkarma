@@ -31,10 +31,10 @@ class Footer extends Component {
                 </div>
                 <div className="footerDiv">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Finkarma.in"><img src={facebook} alt="Facebook" className="SocialMediaLogo"/></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/finkarma.in/"><img src={instagram} alt="Instagram" className="SocialMediaLogo ml-3"/></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/74031084"><img src={linkedin} alt="Linkedin" className="SocialMediaLogo ml-3"/></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/finkarmaIN"><img src={twitter} alt="Twitter" className="SocialMediaLogo ml-3"/></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCaEFrIpHFPzvlHSJoBwZsyw"><img src={youtube} alt="Youtube" className="SocialMediaLogo ml-3"/></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/finkarma.in/"><img src={instagram} alt="Instagram" className="SocialMediaLogo ml-sm-5 ml-md-3"/></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/74031084"><img src={linkedin} alt="Linkedin" className="SocialMediaLogo ml-sm-5 ml-md-3"/></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/finkarmaIN"><img src={twitter} alt="Twitter" className="SocialMediaLogo ml-sm-5 ml-md-3"/></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCaEFrIpHFPzvlHSJoBwZsyw"><img src={youtube} alt="Youtube" className="SocialMediaLogo ml-sm-5 ml-md-3"/></a>
                     <div className="SignOffLines">Made with ❤️ in India</div>
                     <div className="copyright">FinKa₹ma © 2021.<br/> ALL RIGHT RESERVED.</div>
                 </div>
