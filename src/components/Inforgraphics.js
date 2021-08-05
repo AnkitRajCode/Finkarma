@@ -6,7 +6,7 @@ import vector from '../images/headerCover.jpg'
 class Inforgraphics extends Component {
     render() {
         return (
-            <div className="inforgraphics py-4">
+            <div className="inforgraphicslanding py-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-3">

@@ -22,13 +22,14 @@
     transition: all 0.3s ease;
  }
  .bar .content .gfg-logo {
-    width: 100px;
+    width: 40px;
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    margin-bottom: 10px;
  }
  .bar .content .make-smaller {
-    width: 70px;
+    width: 30px;
     transition: 0.2s ease-in-out;
  }
  .bar .content .menu-list li a {
@@ -46,14 +47,16 @@
  }
  .bar .content {
     display: flex;
-    align-items: center;
+    align-items: center!important;
     justify-content: space-between;
  }
  .bar .logo a {
-    color: #fff;
     font-size: 30px;
-    font-weight: 600;
+    margin-left: 10px;
     text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
  }
  .bar .menu-list {
     display: inline-flex;
@@ -197,6 +200,15 @@
     }
     .subButton {
         display: none;
+    }
+    .bar .content .gfg-logo {
+      margin-bottom: 0px;
+   }
+    .bar .content .make-smaller {
+      width: 40px;
+    }
+    .bar .logo a {
+       display: none;
     }
     .bar .content .burger-menu {
        display: flex;

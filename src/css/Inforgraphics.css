@@ -1,7 +1,28 @@
-.inforgraphics{
+/* Landing Page */
+.inforgraphicslanding{
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
 }
 .inforgraphics .card{
     cursor: pointer;
+}
+
+/* Inforgraphics JSX */
+.inforgraphics{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+.inforgraphics .container .jumbotron{
+    /* background-image: url(../images/26821997.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    background-color: aliceblue;
+}
+.inforgraphics .container .card{
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.inforgraphics .container .card:hover{
+    transform: scale(1.01) translateY(-5px);
 }

@@ -1,5 +1,6 @@
 .mainBody{
   overflow-x: hidden;
+  user-select: none;
 }
 .main_title_error{
   height: 80vh;

@@ -27,7 +27,7 @@ class Footer extends Component {
                     <div className="tos">Terms of Service</div>
                 </div>
                 <div className="footerDiv">
-                    <img src={googlePlay} alt="play Store" className="playStore"/>
+                    <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.finkarma.app"><img src={googlePlay} alt="play Store" className="playStore"/></a>
                 </div>
                 <div className="footerDivSocial">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Finkarma.in"><img src={facebook} alt="Facebook" className="SocialMediaLogo"/></a>
