@@ -3,6 +3,12 @@
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
 }
+.inforgraphicslanding h1{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 .inforgraphics .card{
     cursor: pointer;
 }
@@ -11,13 +17,22 @@
 .inforgraphics{
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
 }
 .inforgraphics .container .jumbotron{
-    /* background-image: url(../images/26821997.png);
+    height: 290px;
+    background-image: url(../images/InfographicCover.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
-    background-color: aliceblue;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.inforgraphics .container .jumbotron h2{
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .inforgraphics .container .card{
     border: 0px;
@@ -25,4 +40,17 @@
 }
 .inforgraphics .container .card:hover{
     transform: scale(1.01) translateY(-5px);
+}
+
+@media only screen and (max-width: 500px) {
+    .inforgraphics{
+        padding-top: 80px;
+    }
+    .inforgraphics .container .jumbotron{
+        height: 200px;
+    }
+    .inforgraphics .container .jumbotron h2{
+        color: white;
+        font-size: 18px;
+    }
 }

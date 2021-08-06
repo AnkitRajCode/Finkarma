@@ -11,7 +11,7 @@ class Subscriber extends Component {
                     <input type="email" name="" placeholder="Enter Your Email" className="subscribeInput" />
                     <input type="button" name="" value="Subscribe" className="subscribeButton" />
                 </form>
-                <div className="signingOffLineSub">Be a part of our ever growing community. <a href="https://twitter.com/finkarmaIN">Join us on Twitter.</a></div>
+                <div className="signingOffLineSub">Be a part of our ever growing community.</div>
             </div>
         )
     }

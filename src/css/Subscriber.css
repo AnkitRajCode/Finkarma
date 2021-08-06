@@ -70,10 +70,6 @@
     font-weight: 400;
     color: #525f7f;
 }
-.signingOffLineSub a{
-    text-decoration: none!important;
-    display: block;
-}
 
 @media only screen and (max-width: 500px) {
     .Subscriber{
@@ -87,8 +83,5 @@
     .subscribeButton{
         width: 90vw;
         margin: 20px 5vw;
-    }
-    .signingOffLineSub a{
-        display: none;
     }
 }

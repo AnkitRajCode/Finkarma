@@ -8,6 +8,7 @@ class Inforgraphics extends Component {
         return (
             <div className="inforgraphicslanding py-4">
                 <div className="container">
+                    <h1>Infographics</h1>
                     <div className="row">
                         <div className="col-sm-3">
                             <div className="card mb-3">

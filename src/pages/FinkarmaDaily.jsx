@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import '../css/Inforgraphics.css';
+import '../css/Finkarmadaily.css';
 import vector from '../images/headerCover.jpg';
 
-class Inforgraphics extends Component {
+class FinkarmaDaily extends Component {
     render() {
         return (
-            <div className="inforgraphics">
+            <div className="finkarmaDaily">
                 <div className="container">
                     <div className="jumbotron pb-4 pb-md-3 pl-2 pl-md-5">
-                        <h2>Infographics</h2>
+                        <h2>Finkarma Daily</h2>
                     </div>
                     <div className="row">
                         <div className="col-sm-4">
@@ -138,4 +138,4 @@ class Inforgraphics extends Component {
     }
 }
 
-export default Inforgraphics;
+export default FinkarmaDaily;

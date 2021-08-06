@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import '../css/Crypto.css';
+import '../css/FundamentalAnalaysis.css';
 import vector from '../images/headerCover.jpg';
 
-class Crypto extends Component {
+class FundamentalAnalaysis extends Component {
     render() {
         return (
-            <div className="crypto">
+            <div className="FundamentalAnalaysis">
                 <div className="container">
                     <div className="jumbotron pb-4 pb-md-3">
-                        <h2>Crypto</h2>
+                        <h2>Fundamental Analysis</h2>
                     </div>
                 </div>
             </div>
@@ -16,4 +16,4 @@ class Crypto extends Component {
     }
 }
 
-export default Crypto;
+export default FundamentalAnalaysis;

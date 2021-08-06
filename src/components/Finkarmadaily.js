@@ -5,7 +5,7 @@ import vector from '../images/headerCover.jpg'
 class Finkarmadaily extends Component {
     render() {
         return (
-            <div className="finkarmaDaily pt-5">
+            <div className="finkarmaDailyLanding pt-5">
                 <div className="container">
                     <div className="row fdFlex">
                         <div className="col-md-6">
