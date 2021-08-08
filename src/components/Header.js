@@ -19,7 +19,7 @@ class Header extends Component {
                             <span className="subscriberDisplayNumber">  1,00,456+ Subscriber</span>
                         </div>
                         <div className="headerTagLine">Financial News Made for you</div>
-                        <div className="headerText">Join Finshots and get your daily dose of the latest, most important Financial News delivered on your device.</div>
+                        <div className="headerText">Join Finkarma and get your daily dose of the latest, most important Financial News delivered on your device.</div>
                         <form action="" method="">
                             <input type="email" name="" placeholder="Enter Your Email" className="headerInput" />
                             <input type="button" name="" value="Subscribe" className="headerButton" />

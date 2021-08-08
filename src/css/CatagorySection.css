@@ -1,0 +1,24 @@
+.CatagorySection{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
+.CatagorySection .container .jumbotron{
+    height: 290px;
+    background-image: url(../images/InfographicCover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.CatagorySection .container .jumbotron h2{
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.EachCatagoryCardImage{
+    width: 100%;
+    height: 100%;
+}
