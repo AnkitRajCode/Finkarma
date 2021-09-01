@@ -42,6 +42,11 @@
     transform: scale(1.01) translateY(-5px);
 }
 
+.inforgraphicsCard{
+    text-decoration: none!important;
+    height: 300px!important;
+}
+
 @media only screen and (max-width: 500px) {
     .inforgraphics{
         padding-top: 80px;

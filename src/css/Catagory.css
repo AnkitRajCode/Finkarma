@@ -38,7 +38,22 @@
     height: 150px;
     margin: 5px 5px;
     background-color: rgba(205, 230, 228, 0.603);
-    /* background-clip: padding-box; */
+    text-decoration: none!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.catagoryBox img{
+    width: 100px;
+    height: 100px;
+}
+.catagoryBox .catagoryBoxName{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.seePost{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
+.seePostTitle{
+    font-size: 40px;
+    font-weight: 600;
+}
+.seePostDate{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.seePostImage img{
+    width: 100%;
+    height: 100%;
+}
+.seePostContent{
+    padding: 50px 0px 20px 0px ;
+    font-size: 20px;
+    color: #3c484e;
+    font-family: 'Roboto', sans-serif;
+}
+.seePostThank{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 700;
+}
+.BlogPostContent img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .seePostTitle{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+}

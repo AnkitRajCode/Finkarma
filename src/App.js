@@ -1,4 +1,4 @@
-import React from 'react';
+import {BrowserRouter, Route , Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import landing from './pages/Landing';
 import Infographics from './pages/Infographics';
@@ -12,18 +12,18 @@ import TechnicalAnalysis from './pages/TechnicalAnalysis';
 import Subscribe from './components/Subscriber';
 import Footer from './components/Footer';
 import './App.css';
-import {BrowserRouter, Route , Switch } from 'react-router-dom';
+import SeePost from './pages/SeePost';
 
-class App extends React.Component {
-  render() {
+const App = () => {
     return (
-       <div className="mainBody">
+       <div className="App">
          <Navbar></Navbar>
          <BrowserRouter>
             <Switch>
               <Route path="/" exact component={landing} />
               <Route path="/Infographics" exact component={Infographics} />
               <Route path="/FinkarmaDaily" exact component={FinkarmaDaily} />
+              <Route path={"/finkarma/:id"} exact component={SeePost} />
               <Route path="/Catagory" exact component={Catagory} />
               <Route path="/Business" exact component={Business} />
               <Route path="/Crypto" exact component={Crypto} />
@@ -37,7 +37,6 @@ class App extends React.Component {
          <Footer></Footer>
        </div>
     );
-  }
 }
 
 export default App;

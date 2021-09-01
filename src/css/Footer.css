@@ -1,6 +1,6 @@
 .footer{
     background-color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     padding: 30px 30px ;
@@ -55,7 +55,7 @@
 }
 .copyright{
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 15px;
     margin-top: 10px;

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import '../css/Catagory.css';
+import chat from '../images/chat.png'
 
 class Catagory extends Component {
     render() {
@@ -14,12 +16,30 @@ class Catagory extends Component {
                         </div>
                         <div className="col-md-6">
                             <div className="main">
-                                <div className="catagoryBox"></div>
-                                <div className="catagoryBox"></div>
-                                <div className="catagoryBox"></div>
-                                <div className="catagoryBox"></div>
-                                <div className="catagoryBox"></div>
-                                <div className="catagoryBox"></div>
+                                <Link to="/TechnicalAnalysis" className="catagoryBox">
+                                    <img src={chat} alt="chat" />
+                                    <div className="catagoryBoxName">Technical Analysis</div>
+                                </Link>
+                                <Link to="/FundamentalAnalaysis" className="catagoryBox">
+                                    <img src={chat} alt="chat" />
+                                    <div className="catagoryBoxName">Fundamental Analaysis</div>
+                                </Link>
+                                <Link to="/Business" className="catagoryBox">
+                                    <img src={chat} alt="chat" />
+                                    <div className="catagoryBoxName">Business</div>
+                                </Link>
+                                <Link to="/Infographics" className="catagoryBox">
+                                    <img src={chat} alt="chat" />
+                                    <div className="catagoryBoxName">Infographics</div>
+                                </Link>
+                                <Link to="/PersonalFinance" className="catagoryBox">
+                                    <img src={chat} alt="chat" />
+                                    <div className="catagoryBoxName">Personal Finance</div>
+                                </Link>
+                                <Link to="/Crypto" className="catagoryBox">
+                                    <img src={chat} alt="chat" />
+                                    <div className="catagoryBoxName">Crypto</div>
+                                </Link>
                             </div>
                         </div>
                     </div>
