@@ -28,6 +28,7 @@ const Business = () => {
     if (postsLoading) {
       dispatch(getPosts());
     }
+    window.scrollTo(0, 0);
   });
 
   

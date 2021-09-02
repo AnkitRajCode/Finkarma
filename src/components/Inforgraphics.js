@@ -28,6 +28,7 @@ const Infographics = () => {
     if (postsLoading) {
       dispatch(getPosts());
     }
+    window.scrollTo(0, 0);
   });
   
   return (

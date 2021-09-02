@@ -22,6 +22,7 @@ const SeePost = () => {
     if (postsLoading) {
       dispatch(getPosts());
     }
+    window.scrollTo(0, 0);
   }, [dispatch,
     postsLoading]);
 
