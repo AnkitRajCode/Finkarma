@@ -41,7 +41,64 @@ const Finkarmadaily = () => {
                     </div>
                     <div className="col-md-6">
                     {postsLoading
-                        ? <h1>Loading Posts...</h1>
+                        ? <div>
+                            <div className="col-md-12" >
+                                <div className="card mb-2 shadow DailyCard" >
+                                    <div className="row no-gutters">
+                                        <div className="col-md-4">
+                                            <div className="skeleton DailyCardImage"></div>
+                                        </div>
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <h5 className="card-title mb-1">
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                </h5>
+                                                <p className="mt-3">
+                                                    <div className="skeleton-date"></div>
+                                                </p>
+                                                <p className="card-text">
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-12" >
+                                <div className="card shadow DailyCard" >
+                                    <div className="row no-gutters">
+                                        <div className="col-md-4">
+                                            <div className="skeleton DailyCardImage"></div>
+                                        </div>
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <h5 className="card-title mb-1">
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                </h5>
+                                                <p className="mt-3">
+                                                    <div className="skeleton-date"></div>
+                                                </p>
+                                                <p className="card-text">
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                    <div className="skeleton-text"></div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         : latestPosts.map((post, id) => (
                             <div key={id} >
                                 <Link to={`/finkarma/${post.postId}`} 

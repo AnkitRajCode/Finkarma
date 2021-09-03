@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/CatagorySection.css';
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
+import LoadingAnimation from "../components/LoadingAnimationBroad";
 
 const Business = () => {
   const { posts, postsLoading} = useSelector(
@@ -40,7 +41,7 @@ const Business = () => {
             </div>
         <div className="row py-4">
         {postsLoading
-              ? <h1>Loading Posts...</h1>
+              ? <LoadingAnimation/>
               : latestPosts.map((post, id) => (
                 <div className="col-md-6" key={id} >
                     <Link to={`/finkarma/${post.postId}`} 
@@ -67,7 +68,7 @@ const Business = () => {
                                 </p>
                             </div>
                         </div>
-                        </div>
+                      </div>
                   </Link>
                 </div>
             ))}

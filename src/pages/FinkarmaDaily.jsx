@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/Finkarmadaily.css';
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const FinkarmaDaily = () => {
   const { posts, postsLoading} = useSelector(
@@ -39,7 +40,7 @@ const FinkarmaDaily = () => {
         </div>
         <div className="row">
         {postsLoading
-              ? <h1>Loading Posts...</h1>
+              ? <LoadingAnimation/>
               : latestPosts.map((post, id) => (
                 <div className="col-sm-4" key={id} >
                   <Link to={`/finkarma/${post.postId}`} 

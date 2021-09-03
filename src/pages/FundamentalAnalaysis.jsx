@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/CatagorySection.css';
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
+import LoadingAnimationBroad from "../components/LoadingAnimationBroad";
 
 const FundamentalAnalaysis = () => {
   const { posts, postsLoading} = useSelector(
@@ -39,7 +40,7 @@ const FundamentalAnalaysis = () => {
             </div>
         <div className="row py-4">
         {postsLoading
-              ? <h1>Loading Posts...</h1>
+              ? <LoadingAnimationBroad/>
               : latestPosts.filter((post) => 
                 post.post.categories === "4,36,42,32,38" ||  
                 post.post.categories === "4,42,2,32,33" ||  

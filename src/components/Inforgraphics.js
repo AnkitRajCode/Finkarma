@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/Infographics.css';
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const Infographics = () => {
   const { posts, postsLoading} = useSelector(
@@ -37,7 +38,7 @@ const Infographics = () => {
             <h1>Infographics</h1>
         <div className="row">
         {postsLoading
-              ? <h1>Loading Posts...</h1>
+              ? <LoadingAnimation/>
               : latestPosts.filter((post) => 
                 post.post.categories === "34" ||  
                 post.post.categories === "4,34" ||  
