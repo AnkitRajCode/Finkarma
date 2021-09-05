@@ -186,13 +186,14 @@
       display: none;
    }
    .bar .content .gfg-logo {
-   margin-bottom: 0px;
-}
+      float: left;
+      margin-bottom: 0px;
+   }
    .bar .content .make-smaller {
    width: 40px;
    }
    .bar .logo a {
-      display: none;
+      float: left;
    }
    .bar .content .burger-menu {
       display: flex;

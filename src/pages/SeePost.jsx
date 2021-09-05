@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import '../css/SeePost.css';
+import Suggestions from "../components/Suggestions";
 
 const SeePost = () => {
   const { id } = useParams();
@@ -46,6 +47,7 @@ const SeePost = () => {
             </div>
             <hr />
             <div className="seePostThank">Thanks for reading.</div>
+            <Suggestions/>
           </div>
         ): (
           <h1 className="text-center">
