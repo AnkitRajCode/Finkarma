@@ -13,14 +13,14 @@
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 35px;
 }
 .footerAddress{
     font-size: 15px;
     font-weight: 400;
 }
 .footerSlogan{
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 20px;
 }
 .playStore{
@@ -32,20 +32,25 @@
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
 }
 .gmail{
     text-decoration: none!important;
     color: #051441;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
 }
 .tos, 
 .policy{
     color: #051441;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     margin-top: 10px;
+    text-decoration: none!important;
+}
+.policy:hover{
+    color: #051441;
+    text-decoration: none!important;
 }
 .gmail:hover{
     color: black;
@@ -68,15 +73,25 @@
         flex-wrap: wrap;
         padding: 10px;
     }
+    .footerBrand{
+        font-size: 32px;
+    }
     .playStore{
-        width: 160px;
-        height: 72px;
+        margin-top: 10px;
+        width: 150px;
+        height: 70px;
     }
     .footerDiv{
         margin-top: 25px;
     }
     .footerSlogan{
         margin-top: 10px;
+        font-size: 13px;
+    }
+    .gmail,
+    .tos, 
+    .policy{
+        font-size: 13px;
     }
     .SignOffLines{
         margin-top: 10px;

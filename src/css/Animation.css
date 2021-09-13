@@ -1,0 +1,126 @@
+.loadingAnimation{
+    width: 100%;
+}
+.heightImageSeleton{
+    width: 100%;
+    height: 220px!important;
+}
+.heightImageSeletonLanding{
+    width: 100%;
+    height: 120px!important;
+}
+.landingPageAnimationCard{
+    height: 350px!important;
+}
+.skeleton{
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+
+.smallCardImage{
+    width: 100%;
+    height: 10rem!important;
+}
+
+.skeleton-text{
+    width: 100%;
+    height: .5rem;
+    margin-bottom: .25rem;
+    border-radius: .125rem;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+.skeleton-date{
+    width: 50%;
+    height: .5rem;
+    margin-bottom: .25rem;
+    border-radius: .125rem;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+.skeleton-text:last-child{
+    width: 80%;
+    margin-bottom: 0;
+}
+.skeleton-date{
+    width: 50%;
+    height: .5rem;
+    margin-bottom: .25rem;
+    border-radius: .125rem;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+
+/* POST Animation */
+.postAnimation{
+    background-color: aliceblue;
+}
+.PostTitleAnimation,
+.PostTitleAnimationLastLine{
+    height: 1rem;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-bottom: .25rem;
+    border-radius: .125rem;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+.PostTitleAnimationLastLine{
+    width: 70vw;
+    margin-left: 10vw;
+}
+.PostDateAnimation{
+    height: 0.8rem;
+    width: 40vw;
+    margin: 30px 0px 30px 25vw;
+    border-radius: .125rem;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+.PostImageAnimation{
+    height: 500px;
+    width: 80vw;
+    margin: 20px 0px 20px 5vw;
+    border-radius: 5px;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+.PostContentAnimation,
+.PostContentAnimationLastLine{
+    height: .8rem;
+    text-align: center;
+    width: 76vw;
+    margin-left: 7vw;
+    margin-bottom: .25rem;
+    border-radius: .125rem;
+    opacity: .7;
+    animation: skeletion-loading 1s linear infinite alternate;
+}
+.PostContentAnimationLastLine{
+    width: 60vw;
+}
+
+@keyframes skeletion-loading {
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+@media (max-width: 500px) {
+    .heightImageSeletonLanding{
+        height: 200px!important;
+    }
+    .PostDateAnimation{
+        margin: 20px 0px 20px 25vw;
+    }
+    .PostTitleAnimationLastLine{
+        margin-left: 15vw;
+        width: 60vw;
+    }
+    .PostImageAnimation{
+        height: 200px;
+        margin-left: 5vw;
+    }
+}

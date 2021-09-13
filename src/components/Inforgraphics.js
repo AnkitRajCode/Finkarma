@@ -46,7 +46,7 @@ const Infographics = () => {
                 post.post.categories === "32,34" 
               ).map((post, id) => (
                 <div className="col-sm-4" key={id} >
-                  <Link to={`/finkarma/${post.postId}`} 
+                  <Link to={`/${post.post.call}`}
                       className="card mb-5 shadow inforgraphicsCard"
                   >
                     <img
@@ -59,10 +59,6 @@ const Infographics = () => {
                         <h5 className="card-title text-capitalize text-dark mb-1"  dangerouslySetInnerHTML={{__html:sanitize(post.post.title)}}></h5>
 
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
-
-                        {/* <p className="card-text text-dark">
-                            <span className="font-weight-light" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 150))}}></span>
-                        </p> */}
                     </div>
                   </Link>
                 </div>

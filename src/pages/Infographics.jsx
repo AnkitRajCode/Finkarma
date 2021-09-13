@@ -5,6 +5,7 @@ import '../css/Infographics.css';
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
+import { Helmet } from 'react-helmet';
 
 const Infographics = () => {
   const { posts, postsLoading} = useSelector(
@@ -34,6 +35,13 @@ const Infographics = () => {
   
   return (
     <div className="inforgraphics">
+        <Helmet>
+            <title>Finkarma - Infographics</title>
+            <meta
+                name="description"
+                content="Infographics" 
+            />
+        </Helmet>
         <div className="container">
             <div className="jumbotron pb-4 pb-md-3 pl-2 pl-md-5">
                 <h2>Infographics</h2>
@@ -48,7 +56,7 @@ const Infographics = () => {
                 post.post.categories === "32,34" 
               ).map((post, id) => (
                 <div className="col-sm-4" key={id} >
-                  <Link to={`/finkarma/${post.postId}`} 
+                  <Link to={`${post.post.call}`}
                       className="card mb-5 shadow inforgraphicsCard"
                   >
                     <img

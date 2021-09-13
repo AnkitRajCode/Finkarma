@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 .seePost{
     background-color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
     padding-top: 100px;
 }
 .seePostTitle{
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 700;
+    text-align: center;
 }
 .seePostDate{
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
 }
 .seePostImage img{
     width: 100%;
@@ -21,11 +24,13 @@
     padding: 50px 0px 20px 0px ;
     font-size: 20px;
     color: #3c484e;
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-family: Georgia,serif;
 }
 .seePostThank{
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-family: Georgia,serif;
     color: black;
     font-weight: 700;
 }

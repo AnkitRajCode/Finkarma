@@ -1,16 +1,17 @@
-.Subscriber{
-    width: 100vw;
-    height: 80vh;
+.subscribe{
+    width: 100%;
+    padding: 120px 0px 20px 0px;
+    height: 100vh;
     background-color: aliceblue;
     background-image: url(../images/SubscriberBackground.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .subscribeInput{
-    width: 50vw;
-    margin: 50px 25vw 15px 25vw;
+    width: 50%;
+    margin: 10px 25% 10px 25%;
     background: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -25,8 +26,8 @@
     height: 46px;
 }
 .subscribeButton{
-    width: 50vw;
-    margin: 20px 25vw;
+    width: 50%;
+    margin: 20px 25%;
     padding: 10px 15px !important;
     font-size: 15px;
     border-color: #00d2ff;
@@ -48,27 +49,12 @@
     color: #fff;
     text-decoration: none;
 }
-.joinedSubscriber{
-    font-size: 36px;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 600;
-    padding-top: 100px;
-}
-.tagLineSubscriber{
-    font-size: 16px;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 400;
-    color: #525f7f;
-    margin-top: 30px;
-}
-.signingOffLineSub{
-    font-size: 16px;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 400;
-    color: #525f7f;
+
+.subscribeBackgroundImg{
+    background-image: url(../images/subscriber.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 500px) {
@@ -76,12 +62,12 @@
         height: 550px;
     }
     .subscribeInput{
-        width: 90vw;
-        margin: 50px 5vw 15px 5vw;
+        width: 90%;
+        margin: 50px 5% 15px 5%;
 
     }
     .subscribeButton{
-        width: 90vw;
-        margin: 20px 5vw;
+        width: 90%;
+        margin: 20px 5%;
     }
 }

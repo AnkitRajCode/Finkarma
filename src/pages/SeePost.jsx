@@ -5,10 +5,11 @@ import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import '../css/SeePost.css';
 import Suggestions from "../components/Suggestions";
+import PostAnimation from "../components/postAnimation";
+import { Helmet } from 'react-helmet';
 
 const SeePost = () => {
-  const { id } = useParams();
-
+  const { call } = useParams();
   const { posts, postsLoading } = useSelector(
     (state) => ({
       posts: state.posts.posts,
@@ -17,8 +18,7 @@ const SeePost = () => {
     shallowEqual
   );
   const dispatch = useDispatch();
-
-  const currentPost = posts.find((post) => post.postId === id && post);
+  const currentPost = posts.find((post) => post.post.call === call);
   useEffect(() => {
     if (postsLoading) {
       dispatch(getPosts());
@@ -31,9 +31,16 @@ const SeePost = () => {
     <div className="seePost">
       <div className="container">
         {postsLoading ? (
-          <h1 className="text-center">Post Loading...</h1>
+          <PostAnimation/>
         ) : currentPost ? (
           <div>
+            <Helmet>
+              <title>Finkarma - {currentPost.post.call}</title>
+              <meta
+                  name="description"
+                  content={currentPost.post.call} 
+              />
+            </Helmet>
             <div className="seePostTitle" dangerouslySetInnerHTML={{__html:sanitize(currentPost.post.title)}}></div>
             <div className="seePostDate"><span className="h5">Released on :</span> {currentPost.post.date.substring(0,10)}</div>
             <div className="seePostImage">
@@ -43,7 +50,7 @@ const SeePost = () => {
               />
             </div>
             <div className="seePostContent">
-                <span dangerouslySetInnerHTML={{__html:sanitize(currentPost.post.content.substring(0, 1000000))}} className="BlogPostContent"></span>
+                <span dangerouslySetInnerHTML={{__html:sanitize(currentPost.post.content.substring(8, 1000000))}} className="BlogPostContent"></span>
             </div>
             <hr />
             <div className="seePostThank">Thanks for reading.</div>
@@ -51,7 +58,7 @@ const SeePost = () => {
           </div>
         ): (
           <h1 className="text-center">
-            Post with id <span className="text-primary">{id}</span> does not
+            Post with id <span className="text-primary">{call}</span> does not
             exists
           </h1>
         )}{" "}

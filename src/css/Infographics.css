@@ -1,7 +1,7 @@
 /* Landing Page */
 .inforgraphicslanding{
     background-color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .inforgraphicslanding h1{
     font-size: 40px;
@@ -16,7 +16,7 @@
 /* Inforgraphics JSX */
 .inforgraphics{
     background-color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 100px;
 }
 .inforgraphics .container .jumbotron{

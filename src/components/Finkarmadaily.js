@@ -35,100 +35,86 @@ const Finkarmadaily = () => {
             <div className="container">
                 <div className="row fdFlex">
                     <div className="col-md-6">
-                        <div className="fdTitle">Finkarma Daily</div>
-                        <div className="fdAbout">Every great design begin with an even better story</div>
-                        <div className="fdContent">Since beginning my journey as a freelancer designer nearly 4 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use, I am quietly confident, naturally curious.</div>
+                        <Link to="/finkarmaDaily" className="fdTitle">Finkarma Daily</Link>
+                        <div className="fdAbout">Incisive articles and stories about the economy with emphasis on financial world. The brief untangled roundups would take just a few minutes to grasp.</div>
+                        <div className="fdContent">Incisive articles and stories about the economy with emphasis on financial world. Our frequent updates would envelop a wide range from the market technicals to the economy as a whole. We believe in multi-faceted approach when it comes to money management. Our brief untangled roundups would take just a few minutes to grasp. </div>
                     </div>
                     <div className="col-md-6">
                     {postsLoading
                         ? <div>
-                            <div className="col-md-12" >
-                                <div className="card mb-2 shadow DailyCard" >
-                                    <div className="row no-gutters">
-                                        <div className="col-md-4">
-                                            <div className="skeleton DailyCardImage"></div>
+                            <div className="list-group landingPageAnimationCard">
+                                <div className="list-group-item list-group-item-action ">
+                                    <div className="row">
+                                        <div className=" col-sm-4 ">
+                                            <div className="heightImageSeletonLanding skeleton"></div>
                                         </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
-                                                <h5 className="card-title mb-1">
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                </h5>
-                                                <p className="mt-3">
-                                                    <div className="skeleton-date"></div>
-                                                </p>
-                                                <p className="card-text">
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                </p>
-                                            </div>
+                                        <div className="col-sm-8 mt-3">
+                                        <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-date my-3"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-md-12" >
-                                <div className="card shadow DailyCard" >
-                                    <div className="row no-gutters">
-                                        <div className="col-md-4">
-                                            <div className="skeleton DailyCardImage"></div>
+                                <div className="list-group-item list-group-item-action ">
+                                    <div className="row">
+                                        <div className=" col-sm-4 ">
+                                            <div className="heightImageSeletonLanding skeleton"></div>
                                         </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
-                                                <h5 className="card-title mb-1">
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                </h5>
-                                                <p className="mt-3">
-                                                    <div className="skeleton-date"></div>
-                                                </p>
-                                                <p className="card-text">
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                    <div className="skeleton-text"></div>
-                                                </p>
-                                            </div>
+                                        <div className="col-sm-8 mt-3">
+                                        <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-date my-3"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="list-group-item list-group-item-action ">
+                                    <div className="row">
+                                        <div className=" col-sm-4 ">
+                                            <div className="heightImageSeletonLanding skeleton"></div>
+                                        </div>
+                                        <div className="col-sm-8 mt-3">
+                                        <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-date my-3"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
+                                            <div className="skeleton-text"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         : latestPosts.map((post, id) => (
-                            <div key={id} >
-                                <Link to={`/finkarma/${post.postId}`} 
-                                    className="card mb-md-3 mb-4 shadow DailyCard"
-                                >
-                                <div className="row no-gutters">
-                                    <div className="col-md-4">
+                            <div className="list-group" key={id} >
+                              <Link to={`/${post.post.call}`}
+                                  className="list-group-item list-group-item-action mt-4 mt-sm-2 text-decoration-none"
+                                  
+                              >
+                                <div className="row">
+                                    <div className="col-sm-4">
                                         <img
                                             src={post.post.image}
                                             alt={post.post.title}
-                                            className="DailyCardImage"
+                                            className="card-img-top border-bottom pt-2"
                                         />
                                     </div>
-                                    <div className="col-md-8">
-                                        <div className="card-body">
-                                            <h5 className="card-title text-dark mb-1">
-                                                {post.post.title}
-                                            </h5>
-
-                                            <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
-
-                                            <p className="card-text text-dark">
-                                                <span className="font-weight-light" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 110))}}></span>
-                                            </p>
-                                        </div>
+                                    <div className="col-sm-8 mt-2">
+                                        <h5 className="card-title text-capitalize text-dark mb-1">
+                                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title)}}></span>
+                                        </h5>
+                        
+                                        <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
                                     </div>
                                 </div>
                             </Link>
                         </div>
-                        )).slice(0,2)}
+                        )).slice(0,3)}
                     </div>
                 </div>
             </div>
@@ -137,5 +123,6 @@ const Finkarmadaily = () => {
 }
 
 export default Finkarmadaily;
+
 
 

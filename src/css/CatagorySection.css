@@ -1,6 +1,6 @@
 .CatagorySection{
     background-color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 100px;
 }
 .CatagorySection .container .jumbotron{
@@ -18,14 +18,18 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-.EachCatagoryCardImage{
-    width: 100%;
-    height: 200px;
-}
-
 .CatagoryCard{
     text-decoration: none!important;
-    height: 200px;
+    height: 430px!important;
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.CatagoryCard:hover{
+    transform: scale(1.01) translateY(-5px);
+}
+.catagoryCardImageHeight{
+    width: 100%;
+    height: 220px!important;
 }
 
 .comingSoon{

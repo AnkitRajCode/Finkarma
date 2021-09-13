@@ -5,6 +5,7 @@ import '../css/Finkarmadaily.css';
 import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
+import { Helmet } from 'react-helmet';
 
 const FinkarmaDaily = () => {
   const { posts, postsLoading} = useSelector(
@@ -34,6 +35,13 @@ const FinkarmaDaily = () => {
   
   return (
     <div className="finkarmaDaily">
+      <Helmet>
+          <title>Finkarma - Finkarma Daily</title>
+          <meta
+              name="description"
+              content="Finkarma - Finkarma Daily" 
+          />
+      </Helmet>
       <div className="container">
         <div className="jumbotron pb-4 pb-md-3 pl-2 pl-md-5">
             <h2>Finkarma Daily</h2>
@@ -43,24 +51,23 @@ const FinkarmaDaily = () => {
               ? <LoadingAnimation/>
               : latestPosts.map((post, id) => (
                 <div className="col-sm-4" key={id} >
-                  <Link to={`/finkarma/${post.postId}`} 
-                      className="card mb-5 shadow FinkarmaDailyCard"
+                  <Link to={`${post.post.call}`}
+                      className="card mb-5 shadow CatagoryCard"
                   >
                     <img
                       src={post.post.image}
                       alt={post.post.title}
-                      className="card-img-top border-bottom"
-                      style={{height:"220px"}}
+                      className="card-img-top border-bottom catagoryCardImageHeight"
                     />
                     <div className="card-body">
                         <h5 className="card-title text-capitalize text-dark mb-1">
-                            {post.post.title}
+                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title.substring(0, 74))}}></span>
                         </h5>
 
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
 
                         <p className="card-text text-dark">
-                            <span className="font-weight-light" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 110))}}></span>
+                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 134))}}></span>
                         </p>
                     </div>
                   </Link>

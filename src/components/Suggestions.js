@@ -31,7 +31,7 @@ const Suggestions = () => {
     window.scrollTo(0, 0);
   });
 
-  
+  const num = Math.floor(Math.random() * 15);
   return (
     <div className="inforgraphicslanding py-4">
         <div className="container">
@@ -41,14 +41,14 @@ const Suggestions = () => {
               ? <LoadingAnimation/>
               : latestPosts.map((post, id) => (
                 <div className="col-sm-4" key={id} >
-                  <Link to={`/finkarma/${post.postId}`} 
-                      className="card mb-5 shadow FinkarmaDailyCard"
+                  <Link to={`/${post.post.call}`}
+                      className="card mb-5 shadow CatagoryCard"
                   >
                     <img
                       src={post.post.image}
                       alt={post.post.title}
                       className="card-img-top border-bottom"
-                      style={{height:"200px"}}
+                      style={{height:"220px"}}
                     />
                     <div className="card-body">
                         <h5 className="card-title text-capitalize text-dark mb-1"  dangerouslySetInnerHTML={{__html:sanitize(post.post.title)}}></h5>
@@ -56,15 +56,12 @@ const Suggestions = () => {
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
 
                         <p className="card-text text-dark">
-                            <span className="font-weight-light" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 150))}}></span>
+                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 150))}}></span>
                         </p>
                     </div>
                   </Link>
                 </div>
-            )).slice(
-              Math.floor(Math.random() * 11),
-              Math.floor(Math.random() * 16) + 5
-            )}
+            )).slice(num,num + 3)}
         </div>
       </div>
     </div>

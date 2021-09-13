@@ -1,4 +1,4 @@
-import '../css/LoadingAnimation.css';
+import '../css/Animation.css';
 const LoadingAnimation = () => {
     return ( 
         <div className="loadingAnimation">

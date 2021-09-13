@@ -1,0 +1,29 @@
+.AppDownloadImage{
+    height: 580px;
+    width: 100%;
+    background-image: url(../images/sub3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: aliceblue;
+}
+.LandingplayStore{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .AppDownloadImage{
+        height: 700px;
+        background-image: url(../images/sub2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .LandingplayStore{
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 500px;
+        display: block;
+    }
+}
+
