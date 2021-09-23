@@ -6,7 +6,9 @@ import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const FinkarmaDaily = () => {
   const { posts, postsLoading} = useSelector(
     (state) => ({
@@ -31,20 +33,20 @@ const FinkarmaDaily = () => {
       dispatch(getPosts());
     }
     window.scrollTo(0, 0);
-  }, );
-  
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   return (
     <div className="finkarmaDaily">
       <Helmet>
-          <title>Finkarma - Finkarma Daily</title>
+          <title>Finkarma - Finkarma Bytes</title>
           <meta
               name="description"
-              content="Finkarma - Finkarma Daily" 
+              content="Finkarma - Finkarma Bytes" 
           />
       </Helmet>
       <div className="container">
         <div className="jumbotron pb-4 pb-md-3 pl-2 pl-md-5">
-            <h2>Finkarma Daily</h2>
+            <h2>Finkarma Bytes</h2>
         </div>
         <div className="row">
         {postsLoading
@@ -79,4 +81,4 @@ const FinkarmaDaily = () => {
   );
 };
 
-export default FinkarmaDaily;
+export default withRouter(FinkarmaDaily) ;

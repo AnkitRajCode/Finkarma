@@ -35,8 +35,8 @@ const Finkarmadaily = () => {
             <div className="container">
                 <div className="row fdFlex">
                     <div className="col-md-6">
-                        <Link to="/finkarmaDaily" className="fdTitle">Finkarma Daily</Link>
-                        <div className="fdAbout">Incisive articles and stories about the economy with emphasis on financial world. The brief untangled roundups would take just a few minutes to grasp.</div>
+                        <Link to="/finkarmaBytes" className="fdTitle">Finkarma Bytes</Link>
+                        {/* <div className="fdAbout">Incisive articles and stories about the economy with emphasis on financial world. The brief untangled roundups would take just a few minutes to grasp.</div> */}
                         <div className="fdContent">Incisive articles and stories about the economy with emphasis on financial world. Our frequent updates would envelop a wide range from the market technicals to the economy as a whole. We believe in multi-faceted approach when it comes to money management. Our brief untangled roundups would take just a few minutes to grasp. </div>
                     </div>
                     <div className="col-md-6">

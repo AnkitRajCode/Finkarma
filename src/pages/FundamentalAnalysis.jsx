@@ -6,7 +6,9 @@ import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const FundamentalAnalaysis = () => {
   const { posts, postsLoading} = useSelector(
     (state) => ({
@@ -31,6 +33,7 @@ const FundamentalAnalaysis = () => {
       dispatch(getPosts());
     }
     window.scrollTo(0, 0);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   });
   
   return (
@@ -84,4 +87,4 @@ const FundamentalAnalaysis = () => {
   );
 };
 
-export default FundamentalAnalaysis;
+export default withRouter(FundamentalAnalaysis);

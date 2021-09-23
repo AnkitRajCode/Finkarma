@@ -1,8 +1,15 @@
 import '../css/CatagorySection.css';
 import { Helmet } from 'react-helmet';
+import { withRouter } from 'react-router';
+import React,{ useEffect } from 'react';
 
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const  Crypto = () => {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   return (
     <div className="CatagorySection">
         <Helmet>
@@ -22,4 +29,4 @@ const  Crypto = () => {
   );
 };
 
-export default  Crypto;
+export default  withRouter(Crypto);

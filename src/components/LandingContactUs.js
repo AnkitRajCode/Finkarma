@@ -1,26 +1,46 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
+import { useState } from 'react';
+import '../css/Subscriber.css';
+import { useHistory } from 'react-router';
 
-export default function LandingContactUs() {
+const LandingContactUs = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [isPending, setIsPending] =useState(false);
+  const history = useHistory();
 
-  function sendEmail(e) {
-
+  const handleSubmit = (e) =>{
     e.preventDefault();
+    const data = { email:email,name:name, mobile:mobile };
 
-    emailjs.sendForm('service_km5w48g', 'template_jqbp70g', e.target, 'user_v6rwjtc44xQBW4ONZNpiO')
-      .then((result) => {
-          console.log(result.text);
-          alert("🎉You have Successfully Subscribed🎉");
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
-  }
+    setIsPending(true);
+
+    fetch('https://kpiro.com/savedetails',{
+        method: 'POST',
+        headers: { "content-Type" : "application/json" },
+        body: JSON.stringify(data)
+    }).then(()=>{
+        console.log('new data added');
+        setIsPending(false);
+        history.push('/');
+    });
+
+}
 
   return (
-      <form className="contact-form" onSubmit={sendEmail}>
-        <input type="email" name="user_email" className="headerInput" placeholder="Enter your Email"/>
-        <input type="submit" value="Subscribe" className="headerButton" />
-      </form>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input 
+            type="email" 
+            required
+            value={email}
+            onChange={(e)=> setEmail(e.target.value)}
+            className="headerInput"
+            placeholder="Enter your Email"
+          />
+        { !isPending && <button className="headerButton">Subscribe</button> }
+        { isPending && <button disabled className="headerButton">Adding Subscription...</button> }
+    </form>
   );
 }
+
+export default LandingContactUs ;

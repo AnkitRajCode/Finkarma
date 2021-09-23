@@ -31,12 +31,12 @@ class Footer extends Component {
                     <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.finkarma.app"><img src={googlePlay} alt="play Store" className="playStore"/></a>
                 </div>
                 <div className="footerDivSocial">
+                    <div className="followUs">Follow Us</div>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Finkarma.in"><img src={facebook} alt="Facebook" className="SocialMediaLogo"/></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/finkarma.in/"><img src={instagram} alt="Instagram" className="SocialMediaLogo ml-3"/></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/74031084"><img src={linkedin} alt="Linkedin" className="SocialMediaLogo ml-3"/></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/finkarmaIN"><img src={twitter} alt="Twitter" className="SocialMediaLogo ml-3"/></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCaEFrIpHFPzvlHSJoBwZsyw"><img src={youtube} alt="Youtube" className="SocialMediaLogo ml-3"/></a>
-                    <div className="SignOffLines">Handcrafted with Love❤️</div>
                     <div className="copyright">FinKa₹ma © 2021.<br/> ALL RIGHT RESERVED.</div>
                 </div>
             </div>

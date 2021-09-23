@@ -7,7 +7,9 @@ import '../css/SeePost.css';
 import Suggestions from "../components/Suggestions";
 import PostAnimation from "../components/postAnimation";
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const SeePost = () => {
   const { call } = useParams();
   const { posts, postsLoading } = useSelector(
@@ -24,6 +26,7 @@ const SeePost = () => {
       dispatch(getPosts());
     }
     window.scrollTo(0, 0);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, [dispatch,
     postsLoading]);
 
@@ -53,7 +56,6 @@ const SeePost = () => {
                 <span dangerouslySetInnerHTML={{__html:sanitize(currentPost.post.content.substring(8, 1000000))}} className="BlogPostContent"></span>
             </div>
             <hr />
-            <div className="seePostThank">Thanks for reading.</div>
             <Suggestions/>
           </div>
         ): (
@@ -67,4 +69,4 @@ const SeePost = () => {
   );
 };
 
-export default SeePost;
+export default withRouter( SeePost);

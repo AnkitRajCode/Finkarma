@@ -1,24 +1,34 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
+import { useState } from 'react';
 import '../css/Subscriber.css';
 import { Helmet } from 'react-helmet';
+import { withRouter, useHistory } from 'react-router';
 
+const ContactUs = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [isPending, setIsPending] =useState(false);
+  const history = useHistory();
 
-export default function ContactUs() {
-
-  function sendEmail(e) {
-
+  const handleSubmit = (e) =>{
     e.preventDefault();
+    const data = { email:email,name:name, mobile:mobile };
 
-    emailjs.sendForm('service_km5w48g', 'template_jqbp70g', e.target, 'user_v6rwjtc44xQBW4ONZNpiO')
-      .then((result) => {
-          console.log(result.text);
-          alert("🎉You have Successfully Subscribed🎉");
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
-  }
+    setIsPending(true);
+
+    fetch('https://kpiro.com/savedetails',{
+        method: 'POST',
+        headers: { "content-Type" : "application/json" },
+        body: JSON.stringify(data)
+    }).then(()=>{
+        console.log('new data added');
+        setIsPending(false);
+        history.push('/');
+    });
+
+}
+
+
 
   return (
     <div className="subscribe subscribeBackgroundImg">
@@ -26,22 +36,48 @@ export default function ContactUs() {
         <title>Finkarma - Subscribe</title>
         <meta
             name="description"
-            content="finkarma - subscribe" 
+            content="finkarma - Subscribe" 
         />
       </Helmet>
       <div className="row">
         <div className="col-md-6 mt-5">
-          <form onSubmit={sendEmail}>
+          <form onSubmit={handleSubmit}>
             <div className="h2 text-center">Subscribe Now</div>
-            <input type="text" name="user_name" className="subscribeInput" placeholder="Name" />
-            <input type="email" name="user_email" className="subscribeInput" placeholder="Enter your Email"/>
-            <input type="number" name="contact_number" className="subscribeInput" placeholder="Contact Number" />
-            <input type="submit" value="Subscribe" className="subscribeButton" />
+            <input 
+              type="text" 
+              required
+              value={name}
+              onChange={(e)=> setName(e.target.value)}
+              className="subscribeInput"
+              placeholder="Enter your Name"
+            />
+            <input 
+              type="email" 
+              required
+              value={email}
+              onChange={(e)=> setEmail(e.target.value)}
+              className="subscribeInput"
+              placeholder="Enter your Email"
+            />
+            <input 
+              type="number" 
+              required
+              value={mobile}
+              onChange={(e)=> setMobile(e.target.value)}
+              className="subscribeInput"
+              placeholder="Contact Number"
+            />
+            
+            { !isPending && <button className="subscribeButton">Subscribe</button> }
+            { isPending && <button disabled className="subscribeButton">Adding Subscription...</button> }
           </form>
         </div>
-        <div className="col-md-6">
-        </div>
+
+        <div className="col-md-6"></div>
+
       </div>
     </div>
   );
 }
+
+export default withRouter(ContactUs) ;

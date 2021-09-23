@@ -7,8 +7,14 @@ import trackStatistic from '../images/track_statistic.gif';
 import easyMoney from '../images/easy_money.gif';
 import FinancialReport from '../images/Financial_report.gif';
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import React,{ useEffect } from 'react';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const Catagory = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    });
     return (
         <div className="catagory">
             <Helmet>
@@ -88,4 +94,4 @@ const Catagory = () => {
     )
 }
 
-export default Catagory;
+export default withRouter(Catagory);

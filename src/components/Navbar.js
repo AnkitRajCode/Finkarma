@@ -59,7 +59,7 @@ class Navbar extends Component {
 
                 <ul className="menu-list">
                   <li><a href="/" className="nav_home">Home</a></li>
-                  <li><a href="/finkarmaDaily" className="nav_event">Finkarma Daily </a></li>
+                  <li><a href="/finkarmaBytes" className="nav_event">Finkarma Bytes </a></li>
                   <li><a href="/Catagory" className="nav_projects">Category </a></li>
                   <li><a href="/Infographics" className="nav_about">Infographics </a></li>
                 </ul>

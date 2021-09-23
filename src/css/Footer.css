@@ -55,15 +55,20 @@
 .gmail:hover{
     color: black;
 }
-.SignOffLines{
-    margin-top: 10px;
+.followUs{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .copyright{
     color: black;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -112,5 +117,8 @@
         flex-direction: row ;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .followUs{
+        text-align: center;
     }
 }

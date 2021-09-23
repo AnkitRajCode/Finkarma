@@ -6,7 +6,9 @@ import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 
 const Business = () => {
   const { posts, postsLoading} = useSelector(
@@ -32,6 +34,7 @@ const Business = () => {
       dispatch(getPosts());
     }
     window.scrollTo(0, 0);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   });
 
   
@@ -81,4 +84,4 @@ const Business = () => {
   );
 };
 
-export default Business;
+export default withRouter(Business);

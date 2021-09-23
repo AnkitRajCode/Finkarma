@@ -33,7 +33,7 @@ let myString = "/:call";
             <Switch>
               <Route path="/" exact component={landing} />
               <Route path="/Infographics" exact component={Infographics} />
-              <Route path="/FinkarmaDaily" exact component={FinkarmaDaily} />
+              <Route path="/FinkarmaBytes" exact component={FinkarmaDaily} />
               <Route path="/Catagory" exact component={Catagory} />
               <Route path="/Business" exact component={Business} />
               <Route path="/Crypto" exact component={Crypto} />

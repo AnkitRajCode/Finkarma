@@ -6,7 +6,9 @@ import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const Infographics = () => {
   const { posts, postsLoading} = useSelector(
     (state) => ({
@@ -31,7 +33,8 @@ const Infographics = () => {
       dispatch(getPosts());
     }
     window.scrollTo(0, 0);
-  }, );
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   
   return (
     <div className="inforgraphics">
@@ -80,4 +83,4 @@ const Infographics = () => {
   );
 };
 
-export default Infographics;
+export default withRouter(Infographics);

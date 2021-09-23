@@ -6,7 +6,9 @@ import {sanitize} from 'dompurify';
 import { getPosts } from "../redux/actionCreators/postsActionCreator";
 import LoadingAnimation from "../components/LoadingAnimation";
 import { Helmet } from 'react-helmet';
-
+import { withRouter } from 'react-router';
+import ReactGA from "react-ga";
+ReactGA.initialize( process.env.React_App_Tracking_Code );
 const TechnicalAnalysis = () => {
   const { posts, postsLoading} = useSelector(
     (state) => ({
@@ -31,6 +33,7 @@ const TechnicalAnalysis = () => {
       dispatch(getPosts());
     }
     window.scrollTo(0, 0);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   });
   
   return (
@@ -85,4 +88,4 @@ const TechnicalAnalysis = () => {
   );
 };
 
-export default TechnicalAnalysis;
+export default withRouter(TechnicalAnalysis) ;
