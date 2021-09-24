@@ -47,7 +47,7 @@ const SeePost = () => {
               <meta property="og:title" content={currentPost.post.title} />
               <meta property="og:description" content={currentPost.post.excerpt.substring(8, 100)} />
               <meta property="og:image" content={currentPost.post.image} />
-              <meta property="og:url" content={`https://finkarma.in/${currentPost.post.call}`} />
+              <meta property="og:url" content={`https://finkarma.netlify.app/${currentPost.post.call}`} />
               <meta name="twitter:card" content="summary_large_image"/>
               <meta name="twitter:image:alt" content={currentPost.post.title} />
             </Helmet>
