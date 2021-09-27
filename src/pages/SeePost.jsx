@@ -38,12 +38,14 @@ const SeePost = () => {
           <PostAnimation/>
         ) : currentPost ? (
           <div>
-            <Helmet>
+            <Helmet>         
               <title>Finkarma - {currentPost.post.call}</title>
+              <meta name="title" content={`FinKa₹ma-${currentPost.post.call}`} />
+              <meta name="description" content="Financial Knowledge Simplified" />
               <meta property="og:type" content="website" />
               <meta property="og:url" content={`https://finkarma.netlify.app/${currentPost.post.call}`} />
               <meta property="og:title" content={currentPost.post.title} />
-              <meta property="og:description" content={currentPost.post.excerpt.substring(8, 100)} />
+              <meta property="og:description" content={currentPost.post.excerpt} />
               <meta property="og:image" content={currentPost.post.image} />
             </Helmet>
             <div className="seePostTitle" dangerouslySetInnerHTML={{__html:sanitize(currentPost.post.title)}}></div>
