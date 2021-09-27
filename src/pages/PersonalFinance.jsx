@@ -42,7 +42,7 @@ const PersonalFinance = () => {
             <title>Finkarma - Personal Finance</title>
             <meta
                 name="description"
-                content="Personal Finance" 
+                content="You should really perceive the basic elements of financial planning such as budgeting, debt, credit, loans and retirement etc." 
             />
         </Helmet>
         <div className="container">
@@ -66,13 +66,13 @@ const PersonalFinance = () => {
                     />
                     <div className="card-body">
                         <h5 className="card-title text-capitalize text-dark mb-1">
-                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title.substring(0, 74))}}></span>
+                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title)}}></span>
                         </h5>
 
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
 
                         <p className="card-text text-dark">
-                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 122))}}></span>
+                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(0, 134))}}></span>
                         </p>
                     </div>
                   </Link>

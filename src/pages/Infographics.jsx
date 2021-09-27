@@ -42,7 +42,7 @@ const Infographics = () => {
             <title>Finkarma - Infographics</title>
             <meta
                 name="description"
-                content="Infographics" 
+                content="Infographics are the graphical or visual representation of the data." 
             />
         </Helmet>
         <div className="container">

@@ -16,7 +16,7 @@ const  Crypto = () => {
             <title>Finkarma - Crypto</title>
             <meta
                 name="description"
-                content="Finkarma-Crypto" 
+                content="Cryptocurrencies have been transforming the financial world." 
             />
         </Helmet>
         <div className="container">

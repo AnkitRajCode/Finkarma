@@ -41,11 +41,11 @@ const Business = () => {
   return (
     <div className="CatagorySection">
         <Helmet>
-           <title>Finkarma - Business</title>
-           <meta
+          <title>Finkarma - Business</title>
+          <meta
             name="description"
-            content="Finkarma-Business" 
-           />
+            content="Business is the activity of making one's living or making money by producing or buying and selling products such as goods and services."
+          />
          </Helmet>
         <div className="container">
             <div className="jumbotron pb-4 pb-md-3">
@@ -66,13 +66,13 @@ const Business = () => {
                     />
                     <div className="card-body">
                         <h5 className="card-title text-capitalize text-dark mb-1">
-                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title.substring(0, 74))}}></span>
+                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title)}}></span>
                         </h5>
 
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
 
                         <p className="card-text text-dark">
-                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 134))}}></span>
+                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(0, 134))}}></span>
                         </p>
                     </div>
                   </Link>

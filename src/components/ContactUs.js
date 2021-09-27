@@ -36,7 +36,7 @@ const ContactUs = () => {
         <title>Finkarma - Subscribe</title>
         <meta
             name="description"
-            content="finkarma - Subscribe" 
+            content="Subscribe to Finkarma to get simplified digital information about the financial markets at your fingertips." 
         />
       </Helmet>
       <div className="row">

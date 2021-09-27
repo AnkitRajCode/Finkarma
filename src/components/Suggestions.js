@@ -56,7 +56,7 @@ const Suggestions = () => {
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
 
                         <p className="card-text text-dark">
-                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 150))}}></span>
+                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(0, 150))}}></span>
                         </p>
                     </div>
                   </Link>

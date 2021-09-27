@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import '../css/Subscriber.css';
-import { useHistory } from 'react-router';
 
 const LandingContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
   const [isPending, setIsPending] =useState(false);
-  const history = useHistory();
 
   const handleSubmit = (e) =>{
     e.preventDefault();
@@ -21,10 +19,10 @@ const LandingContactUs = () => {
         body: JSON.stringify(data)
     }).then(()=>{
         console.log('new data added');
+        e.target.reset();
+        alert("🎉You have Successfully Subscribed🎉");
         setIsPending(false);
-        history.push('/');
-    });
-
+      });
 }
 
   return (

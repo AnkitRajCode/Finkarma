@@ -42,7 +42,7 @@ const TechnicalAnalysis = () => {
             <title>Finkarma - Technical Analysis</title>
             <meta
                 name="description"
-                content="Technical Analysis" 
+                content="We at Finkarma offer a wide range of Technical Analysis Modules which help you in  intermediate and advanced learners." 
             />
         </Helmet>
         <div className="container">
@@ -70,13 +70,13 @@ const TechnicalAnalysis = () => {
                     />
                     <div className="card-body">
                         <h5 className="card-title text-capitalize text-dark mb-1">
-                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title.substring(0, 74))}}></span>
+                            <span dangerouslySetInnerHTML={{__html:sanitize(post.post.title)}}></span>
                         </h5>
 
                         <p className="small text-muted">{post.post.date.substring(0, 10)}</p>
 
                         <p className="card-text text-dark">
-                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(8, 134))}}></span>
+                            <span className="font-weight-normal" dangerouslySetInnerHTML={{__html:sanitize(post.post.excerpt.substring(0, 134))}}></span>
                         </p>
                     </div>
                   </Link>
