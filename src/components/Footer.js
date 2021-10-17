@@ -24,8 +24,8 @@ class Footer extends Component {
                 </div>
                 <div className="footerDiv">
                     <div className="ourInfo">Our Information</div>
-                    <Link to="/PrivacyPolicy" target="_blank" rel="noopener noreferrer" className="policy">Privacy Policy</Link>
-                    <div className="tos">Terms of Service</div>
+                    <br className="brhide"/><Link to="/PrivacyPolicy" target="_blank" rel="noopener noreferrer" className="policy">Privacy Policy</Link><br/><br className="brhide"/>
+                    <Link to="/toc" target="_blank" rel="noopener noreferrer" className="policy">Terms of Service</Link>
                 </div>
                 <div className="footerDiv">
                     <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.finkarma.app"><img src={googlePlay} alt="play Store" className="playStore"/></a>

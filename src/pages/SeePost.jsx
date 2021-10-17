@@ -48,6 +48,7 @@ const SeePost = () => {
               <meta property="og:description" content={currentPost.post.excerpt.substring(8, 100)} />
               <meta property="og:image" content={currentPost.post.image} />
               <meta property="og:url" content={`https://finkarma.in/${currentPost.post.call}`} />
+              <meta property="canonical" content={`https://finkarma.in/${currentPost.post.call}`} />
               <meta name="twitter:card" content="summary_large_image"/>
               <meta name="twitter:image:alt" content={currentPost.post.title} />
             </Helmet>
@@ -67,7 +68,9 @@ const SeePost = () => {
             <Suggestions/>
           </div>
         ): (
-          <div className="main_title_error">404 : Page Not Found</div>
+          <h1 className="text-center">
+            <span className="text-primary">{call}</span>
+          </h1>
         )}{" "}
       </div>
     </div>

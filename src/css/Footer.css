@@ -45,7 +45,8 @@
     color: #051441;
     font-size: 15px;
     font-weight: 400;
-    margin-top: 10px;
+    padding-top: 20px;
+    width: 100%;
     text-decoration: none!important;
 }
 .policy:hover{
@@ -69,6 +70,9 @@
     font-weight: 400;
     font-size: 15px;
     margin-top: 15px;
+}
+.brhide{
+    display: block;
 }
 
 @media only screen and (max-width: 500px) {
@@ -120,5 +124,8 @@
     }
     .followUs{
         text-align: center;
+    }
+    .brhide{
+        display: none;
     }
 }

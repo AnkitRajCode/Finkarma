@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import './App.css';
 import SeePost from './pages/SeePost';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import toc from './components/TermsAndCondition';
 import ContactUs from './components/ContactUs';
 import { Helmet } from 'react-helmet';
 const App = () => {
@@ -38,6 +39,7 @@ let myString = "/:call";
               <Route path="/Business" exact component={Business} />
               <Route path="/Crypto" exact component={Crypto} />
               <Route path="/PrivacyPolicy" exact component={PrivacyPolicy} />
+              <Route path="/toc" exact component={toc} />
               <Route path="/FundamentalAnalysis" exact component={FundamentalAnalysis} />
               <Route path="/PersonalFinance" exact component={PersonalFinance} />
               <Route path="/TechnicalAnalysis" exact component={TechnicalAnalysis} />

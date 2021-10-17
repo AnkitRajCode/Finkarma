@@ -38,11 +38,24 @@ const FinkarmaDaily = () => {
   return (
     <div className="finkarmaDaily">
       <Helmet>
-          <title>Finkarma - Finkarma Bytes</title>
-          <meta
-              name="description"
-              content="Incisive articles and stories about the economy with emphasis on financial world." 
-          />
+      {/* <!-- Primary Meta Tags --> */}
+      <title>Finkarma - Finkarma Bytes</title>
+      <meta name="title" content="Finkarma - Finkarma Bytes"/>
+      <meta name="description" content="Incisive articles and stories about the economy with emphasis on financial world."/>
+      <link rel="canonical" href="https://finkarma.in/finkarmaBytes" />
+      {/* <!-- Open Graph / Facebook --> */}
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://finkarma.in/finkarmaBytes"/>
+      <meta property="og:title" content="Finkarma - Finkarma Bytes"/>
+      <meta property="og:description" content="Incisive articles and stories about the economy with emphasis on financial world."/>
+      <meta property="og:image" href="../images/icon.png"/>
+
+      {/* <!-- Twitter --> */}
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="https://finkarma.in/finkarmaBytes"/>
+      <meta property="twitter:title" content="Finkarma - Finkarma Bytes"/>
+      <meta property="twitter:description" content="Incisive articles and stories about the economy with emphasis on financial world."/>
+      <meta property="twitter:image" href="../images/icon.png"/>
       </Helmet>
       <div className="container">
         <div className="jumbotron pb-4 pb-md-3 pl-2 pl-md-5">
